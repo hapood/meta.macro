@@ -50,8 +50,7 @@ my-app
 ├── .gitignore
 └── src
     ├── App.js
-    ├── component
-    |   └── loading.js
+    ├── Loading.js
     └── pages
        ├── HomePage.js
        └── LoginPage.js
@@ -114,8 +113,7 @@ my-app
 └── src
     ├── router.js
     ├── router-config.json
-    ├── component
-    |   └── loading.js
+    ├── Loading.js
     └── pages
        ├── HomePage.js
        └── LoginPage.js
