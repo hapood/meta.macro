@@ -1,0 +1,26 @@
+{
+  "name": "meta.macro",
+  "version": "1.0.0",
+  "description": "Using Babel Macro Extract Metadatas from Codes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "keywords": [
+    "macro",
+    "babel",
+    "router",
+    "routers",
+    "route",
+    "react",
+    "reactjs"
+  ],
+  "author": "benlv.hu@qq.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-macros": ""
+  }
+}
