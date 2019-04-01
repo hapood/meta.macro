@@ -1,9 +1,12 @@
 Using Babel Macro Extract Metadatas from Codes
 
+```sh
+npm install --save-dev meta.macro
+```
 ## Usage
 ```js
 // File: /Users/me/workspaces/my-app/src/App.js
-import Controller from 'router.macro';
+import Controller from 'meta.macro';
 
 @Controller('/home', {async: true, chunk: 'main'})
 class App extends React.Component {
@@ -79,7 +82,7 @@ module.exports = {
 ```js
 // src/pages/LoginPage.js
 import React from 'react';
-import Controller from 'router.macro';
+import Controller from 'meta.macro';
 
 @Controller('/login')
 class LoginPage extends React.Component {
@@ -93,7 +96,7 @@ class LoginPage extends React.Component {
 ```js
 // src/pages/HomePage
 import React from 'react';
-import Controller from 'router.macro';
+import Controller from 'meta.macro';
 
 @Controller('/home', { async: true, chunk: 'main' })
 class HomePage extends React.Component {
@@ -127,7 +130,7 @@ import Loading from './Loading';
 import LoginPage from '~/pages/LoginPage';
 
 const lazy = loader => Loadable({
-    delay: 600,
+    delay: 400,
     loading: Loading,
     loader,
   });
