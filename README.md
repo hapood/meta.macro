@@ -22,13 +22,17 @@ Data Extract from Code
 
 ```json
 {
-  "/Users/me/workspaces/my-app/src/App.js": [
-    "/home",
-    {
-      "async": true,
-      "chunk": "main"
-    }
-  ]
+  "/Users/me/workspaces/my-app/src/App.js": {
+    "callee": "Controller",
+    "params": [
+      "/home",
+      {
+        "async": true,
+        "chunk": "main"
+      }
+    ]
+  }
+  
 }
 ```
 
@@ -96,9 +100,9 @@ class LoginPage extends React.Component {
 ```js
 // src/pages/HomePage
 import React from 'react';
-import Controller from 'meta.macro';
+import Page from 'meta.macro';
 
-@Controller('/home', { async: true, chunk: 'main' })
+@Page('/home', { async: true, chunk: 'main' })
 class HomePage extends React.Component {
   render() {
     return (
@@ -156,7 +160,7 @@ Generate File `src/router-config.json`
     "params": []
   },
   "/Users/me/workspaces/my-app/src/pages/HomePage.js": {
-    "callee": "Controller",
+    "callee": "Page",
     "params": [
       "/home",
       {
