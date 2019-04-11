@@ -1,5 +1,7 @@
 Using Babel Macro Extract Metadatas from Codes
 
+Example: [https://github.com/fe-since2019/meta.macro/tree/master/example/router-usage](https://github.com/fe-since2019/meta.macro/tree/master/example/router-usage)
+
 ```sh
 npm install --save-dev meta.macro
 ```
