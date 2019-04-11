@@ -1,0 +1,36 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": [
+      "build/**/*",
+      "node_modules/**/*"
+    ]
+  },
+  "rules": {
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "interface-name": false,
+    "no-console": {
+      "severity": "warning"
+    },
+    "quotemark": [true, "single", "jsx-double", "avoid-template", "avoid-escape"],
+    "semicolon": [true, "always", "ignore-interfaces"],
+    "no-unused-expression": true,
+    "indent": [true, "spaces", 2],
+    "trailing-comma": [true, { "multiline": "always", "singleline": "never" }],
+    "no-trailing-whitespace": true
+  },
+  "jsRules": {
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "interface-name": false,
+    "no-console": {
+      "severity": "warning"
+    },
+    "quotemark": [true, "single", "jsx-double", "avoid-template", "avoid-escape"],
+    "semicolon": [true, "always", "ignore-interfaces"],
+    "indent": [true, "spaces", 2],
+    "trailing-comma": [true, { "multiline": "always", "singleline": "never" }],
+    "no-trailing-whitespace": true
+  }
+}
