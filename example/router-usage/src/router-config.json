@@ -1,19 +1,5 @@
 {
-  "/Users/hubenlv/workspaces/router-examples/src/pages/compile/HomePage.js": {
-    "callee": "Controller",
-    "params": ["/home"],
-    "url": "/home",
-    "import": "~/pages/compile/HomePage.js",
-    "name": "HomePage"
-  },
-  "/Users/hubenlv/workspaces/router-examples/src/pages/compile/LoginPage.js": {
-    "callee": "Controller",
-    "params": ["/login"],
-    "url": "/login",
-    "import": "~/pages/compile/LoginPage.js",
-    "name": "LoginPage"
-  },
-  "/Users/hubenlv/workspaces/router-examples/src/pages/compile/DetailPage.js": {
+  "/Users/hubenlv/workspaces/meta.macro/example/router-usage/src/pages/compile/DetailPage.js": {
     "callee": "Controller",
     "params": [
       "/detail",
@@ -21,6 +7,20 @@
         "async": true,
         "chunk": "common"
       }
-    ]
+    ],
+    "url": "/detail",
+    "import": "~/pages/compile/DetailPage.js",
+    "chunk": "common"
+  },
+  "/Users/hubenlv/workspaces/meta.macro/example/router-usage/src/pages/compile/LoginPage.js": {
+    "callee": "Controller",
+    "params": ["/login"],
+    "url": "/login",
+    "import": "~/pages/compile/LoginPage.js",
+    "name": "LoginPage"
+  },
+  "/Users/hubenlv/workspaces/meta.macro/example/router-usage/src/pages/compile/HomePage.js": {
+    "callee": "Controller",
+    "params": ["/home"]
   }
 }

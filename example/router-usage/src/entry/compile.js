@@ -3,10 +3,6 @@ import ReactDOM from 'react-dom';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Links from '~/component/Links';
 
-import '~/pages/compile/HomePage';
-import '~/pages/compile/LoginPage';
-import '~/pages/compile/DetailPage';
-
 import Pages from '~/router';
 
 console.log(Pages);
