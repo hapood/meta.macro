@@ -13,12 +13,12 @@
     "import": "~/pages/compile/HomePage.js",
     "name": "HomePage"
   },
-  "/Users/hubenlv/workspaces/meta.macro/example/router-usage/src/pages/compile/DetailPage.js": {
+  "/Users/hubenlv/workspaces/meta.macro/example/router-usage/src/pages/compile/Detail2Page.js": {
     "callee": "Controller",
     "params": [
       "/detail",
       {
-        "async": true,
+        "async": false,
         "chunk": "common"
       }
     ]
