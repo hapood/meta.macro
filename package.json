@@ -21,6 +21,7 @@
   "author": "benlv.hu@qq.com",
   "license": "MIT",
   "dependencies": {
-    "babel-plugin-macros": ""
+    "babel-plugin-macros": "",
+    "xxhashjs": "^0.2.2"
   }
 }
