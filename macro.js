@@ -21,7 +21,7 @@ function extractMeta(filePath, meta, config) {
   });
 
   pages[filePath] = meta;
-  config(pages);
+  config.generator(pages);
 }
 
 module.exports = createMacro(webpackCommentImportMacros, { configName });
@@ -31,7 +31,7 @@ function webpackCommentImportMacros({ references, state, babel, config }) {
   if (!config) {
     return;
   }
-  if (typeof config !== 'function') {
+  if (typeof config.generator !== 'function') {
     throw new MacroError(`请指定函数类型，如：
     module.exports = {
         '${configName}': function(){}
@@ -78,7 +78,7 @@ function requireWebpackCommentImport({ referencePath, state, babel, config }) {
     return value;
   })
 
-  extractMeta(state.filename, {
+  extractMeta(state.file.opts.filename, {
     callee: callExpressionPath.node.callee.name,
     params: argumentsValues
   }, config);
